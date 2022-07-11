@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Registration Form</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+        </head>
+</html>
+<body>
+    <center>
+    <table>
+        
+            <h1>Registration Form</h1>
+    <form  name="form1" onsubmit="return(validate())">
+<tr>
+    <td align="right">Full Name:</td>
+    <td><input type="text" name="Fname" size="40" autofocus/></td>
+    <td id="fnv" class="vld"></td>
+</tr>
+
+<tr>
+    <td align="right">E-mail:</td>
+    <td><input type="text" name="Email" size="40" /></td>
+    <td id="ev" class="vld"></td>
+</tr>
+
+<tr>
+    <td align="right"> Mobile No:</td>
+    <td><input type="text" name="Mobile" size="40" maxlength="10" /></td>
+    <td id="nv" ></td>
+</tr>
+
+<tr>
+    <td align="right">Date of Birth:</td>
+    <td><input type="date" name="DOB" size="40" /></td>
+    <td id="dobv" class="vld"></td>
+</tr>
+
+<tr>
+    <td align="right"> User Name:</td>
+    <td><input type="text" name="Uname" size="40" /></td>
+    <td id="uv" class="vld"></td>
+</tr>
+
+<tr>
+    <td align="right">Password:</td>
+    <td><input type="password" name="Password" size="40" /></td>
+    <td id="pv" class="vld"></td>
+</tr>
+
+<tr>
+    <td align="right"> Confirm Password:</td>
+    <td><input type="password" name="Cpassword" size="40px" /></td>
+    <td id="cpv" class="vld"></td>
+</tr>
+
+<tr>
+    <td align="right">Gender</td>
+    <td>
+        Male 
+    <input type="radio" name="radio1" value="Male" onclick="reset_msg()" /> &nbsp;
+
+        Female
+        <input type="radio" name="radio1" value="Female" onclick="reset_msg()" /> <br/>
+    </td>
+</tr>
+
+<tr>
+    <td id="rgen" class="vld"></td>
+</tr>
+
+<tr>
+    <td align="right">Pincode:</td>
+    <td><input type="text" name="Pincode" maxlength="6" size="40"></td>
+    <td id="pinv" class="vld"></td>
+</tr>
+
+<tr>
+    <td align="right">Country:</td>
+    <td>
+        <select name="Country">
+            <option value="-1" selected>Choose your Country</option>
+            <option value="1">India</option>
+            <option value="2">USA</option>
+            <option value="3">UK</option>
+            <option value="4">Germany</option>
+            <option value="5">Japan</option>
+        </select>
+    </td>
+    <td id="cv" class="vld"></td>
+</tr>
+
+<tr>
+    <td align="right"></td>
+    <td>
+        <input type="submit" style="font-size:20px" value="Submit">
+        <input type="reset" style="font-size:20px" value="Reset">
+    </td>
+</tr>
+</table>
+</center>
+    </form>
+    <noscript>
+</body>
